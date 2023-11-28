@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Se corrige la ruta de referencia del archivo css -->
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
   <title>APIs</title>
 </head>
 
@@ -14,13 +15,11 @@
 
   <!-- Se observan clases, id's y etiquetas referidas en el archivo css por lo que se procede a dar estructura al html tomando algunas referencias de la hoja de estilos -->
   <section class="wrapper">
-    <form>
-      <fieldset>
-        <legend>Type in your username:</legend>
-        Username: <input type="text"><br>
-        <input class="button" type="button" value="Submit" />
-      </fieldset>
-    </form>
+    <fieldset>
+      <legend>Type in your username:</legend>
+      Username: <input type="text" id="user"><br>
+      <button type="button" onclick="getUsername()">Let's go!</button>
+    </fieldset>
     <div class="box">
       <table>
         <tr>
